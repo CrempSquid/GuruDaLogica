@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Recursos responsivos*/
+
+@media (min-width: 412px){
+    .menu {
+        width: 100%;
+    }
+    .navegacao{
+        font-size: 50%;
+
+    }
+
+    body {
+        background: ;
+
+    }
+}
+
+/*menu de navegação do site*/
+
+
+:root {
+    --background_color: white;
+    --paragraph_color: rgb(0, 0, 0);
+
+}
+
+ul, li, a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 105%;
+    color: var(--paragraph_color)
+}
+
+.container-nav {
+    justify-content: space-around;
+    display: flex;
+}
+
+.navegacao ul,li {
+    margin-left: 80px;
+    display: flex;
+}
+
+.nav-one li > a{
+    margin: -1rem 20px 0 5px;
+
+}
+
+.container-nav > h1 {
+    margin: 50px;
+
+}
+
+ul,li > a {
+    padding: 10px;
+
+}
+
+.nav-two li > a:hover {
+    background-color: rgb(95, 14, 172);
+    border-radius: 10%;
+    color: white;
+}
+
+/*Home*/
+
+.card {
+    height: 100vh;
+}
+
+.card-img-top {
+    text-align: left;
+
+
+}
+
+.card-body{
+    
+}
+
+.card-text {
+    text-align: right;
+}
+
+.btn-primary {
+}
+
+/*Blog*/
+
+/*Jogos*/
+
+/*Aulas*/
+
+/*FAQ*/
+
+/*Nossa história*/
+
+/*Contato*/
