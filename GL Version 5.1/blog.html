@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/blog.css">
+    <link type="image/x-icon" rel="icon" href="imagens/logo/favicon.ico">
+    <script src="js/arquivo.js"></script>
+    <title>Blog</title>
+</head>
+<body class="background-blog">
+    <header>
+        <div class="container-nav">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="imagens/logo/LOGOBRANCO.png" width="100%"></a>
+                </div>
+                <ul>
+                    <li><a href="index.html">Início</a></li>   
+                    <li><a href="jogos.html">Jogos</a></li>
+                    <li><a href="videoaulas.html">Aulas</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="lg"><a href="entrar.html">Entrar</a></li>
+                </ul>
+                <div class="menu-icon">
+                    <img src="imagens/menu.png">
+                </div>
+            </nav>
+        </div>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+    </header>
+    <aside class="container-blog">
+        <div class="search-blog"><i></i><input type="text" name="search" placeholder="O que você procura?"></div>
+        <div class="artigo">
+            <h2>O que é lógica?</h2>
+            <p>
+                A lógica é a ciência que expõe as leis, modos e formas do conhecimento científico. Trata-se de uma ciência formal desprovida de conteúdo, que se dedica ao estudo das formas válidas de inferência. Trata-se portanto do estudo dos métodos e dos princípios utilizados para distinguir o raciocínio correto do incorreto.
+
+                A etimologia mostra que o conceito de lógica deriva do latim logĭca, que, por sua vez, provém do termo grego logikós (de logos, “razão” ou “estudo”). O filósofo grego Aristóteles foi pioneiro a utilizar a noção para fazer referência ao estudo dos argumentos enquanto manifestadores da verdade na ciência, tendi sido ele quem sugeriu o silogismo como sendo o argumento válido.
+
+                Aristóteles é considerado o pai da lógica formal. Por outro lado, a lógica informal é o estudo metódico dos argumentos prováveis na perspectiva da retórica, da oratória e da filosofia, entre outras ciências. É especializada na identificação de lapsos e paradoxos, e na construção correta dos discursos.
+
+                A lógica natural é a disposição natural para refletir acertadamente sem o auxílio da ciência. A lógica difusa ou fuzzy, pela parte que lhe toca, é aquela que admite uma certa incerteza entre a veracidade ou falsidade das suas premissas, à semelhança do raciocínio humano.
+
+                A lógica linguística trata-se de um campo de estudo ligado a filosofia, o qual dedica-se a organização formal linguística. Em outras palavras, ela ajuda a definir como a linguagem funcionará e, assim, configurar-se bem em cada caso.
+
+                Ainda, no que concerne a lógica linguística, ela, além de apresentar regras para o adequado uso da linguagem, também faz a identificação do que não possui uma validade com coesão. Dado a esse uso, temos o que se conhece por “falácia” que trata-se de um raciocínio errôneo mascarado de correto. O que caracteriza-se como falácia são enunciados com raciocínio incoerente, sem que haja a existência de uma conexão lógica entre os fatos declarados ou ainda sem a presença de nexos causais que responsabilizem-se pela explicação adequada e completa dos resultados existentes nos enunciados.
+
+                Por outro lado, a lógica matemática é aquela que opera com recurso a uma linguagem simbólica artificial e realizando uma abstração dos conteúdos.
+
+                No que diz respeito a matemática, a lógica trabalha com a organização de forma racional, nisso, ela contribui para os resultados de cálculos estejam corretos. Para isso a máquina ou o matemático responsável, através da lógica matemática, faz uso de um padrão que utiliza-se das regras racionais. Ou seja, aqui a lógica estabelece um nexo causal dentro da área da matemática.
+
+                De um modo geral, a lógica quase sempre é composta por três tipos de raciocínios, sendo esses: o raciocínio dedutivo, o raciocínio indutivo e também o raciocínio abdutivo.
+
+                A lógica é também amplamente utilizada na ciência da computação, onde abrange o seu uso em aplicações computacionais. Sendo ela uma essencial e indispensável ferramentas para quem se dedica a essa área.
+
+                Existem outros tipos ou classes de lógica, como é o caso da lógica binária, que trabalha com variáveis que consideram unicamente dois valores discretos.
+            </p>
+        </div>
+    </aside>
+    <footer>
+        <div class="footer-grid">
+            <ul class="sobre__nos">
+                <li><a href="nossa-historia.html">Nossa história</a></li>
+                <li><a href="faq.html">F.A.Q</a></li>
+                <li><a href="contato.html">Contate-nos</a></li>
+                <li><a href="apoie.html">Apoie</a></li>
+            </ul>
+            <ul class="acessibilidade">    
+                <li><a href="acessibilidade.html">Acessibilidade</a></li>  
+            </ul>
+            <ul class="redes__sociais">
+                <li><a href="https://www.facebook.com/"><img src="imagens/facebook.png" alt="Facebook" title="Facebook">Facebook</a></li>
+                <li><a href="https://www.instagram.com/"><img src="imagens/instagram.png" alt="Instagram" title="instagram">Instagram</a></li>
+            </ul>
+            <ul class="topo">
+                <li><a href="#">ᛏ</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        var menu = document.querySelector('nav ul');
+        var menuIcon = document.querySelector('nav .menu-icon');
+        var menuIconImg = document.querySelector('nav .menu-icon img');
+
+        menuIcon.addEventListener('click',()=>{
+            menu.classList.toggle('activo')
+            if (menuiconimg.getAnimations("scr") == 'menu.png'){
+                menuiconimg.setAttribute("src","close.png");
+            }else{
+                menuIconImg.setAttribute("src","menu.png");
+            }
+        })
+    </script>
+</body>
+</html>

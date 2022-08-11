@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link type="image/x-icon" rel="icon" href="imagens/logo/favicon.ico">
+    <script src="js/arquivo.js"></script>
+    <title>cadastro</title>
+</head>
+<body>
+    <header>
+        <div class="container-nav">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="imagens/logo/LOGOBRANCO.png" width="100%"></a>
+                </div>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                        <li><a href="jogos.html">Jogos</a></li>
+                        <li><a href="videoaulas.html">Aulas</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li class="lg"><a href="entrar.html">Entrar</a></li>
+                </ul>
+                <div class="menu-icon">
+                    <img src="imagens/menu.png">
+                </div>
+            </nav>
+        </div>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+    </header>
+    <div class="box">
+        <div class="img-box">
+            <a href="index.html"><img src="imagens/img-formulario.png"></a>
+        </div>
+        <div class="form-box">
+            <h2>Criar conta</h2>
+            <p> Já é membro? <a href="entrar.html"> Entrar</a></p>
+            <form action="#">
+                <div class="input-group">
+                    <label for="nome">Nome Completo</label>
+                    <input  type="text" id="nome" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="input-group">
+                    <label for="usuario">Nome de Usuário</label>
+                    <input  type="tex" id="usuario" placeholder="Digite seu nome de usuario" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input  type="email" id="email" placeholder="Digite seu Email" required>
+                </div>
+                <div class="input-group">
+                    <label for="datanas">Data de Nascimento</label>
+                    <input  type="date" id="datanas" placeholder="Digite sua data de nascimento" required>
+                </div>
+                <div class="input-group w50">
+                    <label for="senha">Senha</label>
+                    <input  type="password" id="senha" placeholder="Digite sua senha" required>
+                </div>
+                <div class="input-group w50">
+                    <label for="comfirmarsenha">Confirmar Senha</label>
+                    <input  type="password" id="comfirmarsenha" placeholder="Confirme a senha" required>
+                </div>
+                <div class="input-group">
+                    <button>cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-grid">
+            <ul class="sobre__nos">
+                <li><a href="nossa-historia.html">Nossa história</a></li>
+                <li><a href="faq.html">F.A.Q</a></li>
+                <li><a href="contato.html">Contate-nos</a></li>
+                <li><a href="apoie.html">Apoie</a></li>
+            </ul>
+            <ul class="acessibilidade">    
+                <li><a href="acessibilidade.html">Acessibilidade</a></li>  
+            </ul>
+            <ul class="redes__sociais">
+                <li><a href="https://www.facebook.com/"><img src="imagens/facebook.png" alt="Facebook" title="Facebook">Facebook</a></li>
+                <li><a href="https://www.instagram.com/"><img src="imagens/instagram.png" alt="Instagram" title="instagram">Instagram</a></li>
+            </ul>
+            <ul class="topo">
+                <li><a href="#">ᛏ</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+            var menu = document.querySelector('nav ul');
+            var menuIcon = document.querySelector('nav .menu-icon');
+            var menuIconImg = document.querySelector('nav .menu-icon img');
+    
+            menuIcon.addEventListener('click',()=>{
+                menu.classList.toggle('activo')
+                if (menuiconimg.getAnimations("scr") == 'menu.png'){
+                    menuiconimg.setAttribute("src","close.png");
+                }else{
+                    menuIconImg.setAttribute("src","menu.png");
+                }
+            })
+
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+</html>
