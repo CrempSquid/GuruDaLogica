@@ -1,0 +1,12 @@
+Blog
+
+O que é Lógica?
+
+	Lógica é o estudo que busca fundamentar, contruir raciocinios válidos acerca da realidade, hoje ela se divide em campos como a filosofia, computação, matemática etc.. foi descoberta pelo estagirita Aristóteles, Segundo ele a lógica era uma disciplina de natureza filosófica, organizando-se a partir de uma análise filosófica dos caracteres próprios do nosso pensamento e da maneira como o nosso pensamento se refere ao real. Suas ideias no que concerne a lógica estão presentes em seu livro Órganon. Mais tarde na idade média a escolastica busca unir a fé e a razão com a filosofia grega tendo como base a lógica aristótelica nas disciplinas das sete artes liberais, grandes filosofos e teologos como Tomás de Aquino e Agostinho de Hipona foram grande destaque. A Lógica Moderna foi fundada por George Boole e Gottlob Frege no séc. XIX, apesar de pertencer a Bertrand Russell e a Alfred N.Whitehead, o primeiro tratado sobre a Lógica Moderna, Principia Mathematica. Este tratado constitui uma obra clássica fundamental sobre a Lógica Moderna, também designada por Logística, Lógica Simbólica ou ainda de Lógica Matemática. A lógica usada por Carroll, no seu trabalho, aparece em oposição à Lógica Antiga de Aristóteles na Antiguidade. No princípio da Idade Moderna, certas ciências foram progressivamente afastando-se da filosofia para se apoiarem em verificações empíricas - passam a seguir o ideal da ciência positiva - sem pretensão directa à "inteligibilidade filosófica" - o ideal que era defendido desde a antiguidade e para o qual convergiam todas as ciências quando procuravam organizar as suas afirmações a partir da essência dos objectos.
+
+Nossa história
+
+Como nos mantemos?
+
+	Oferecemos um serviço totalmemte gratuito e nos mantemos através de patrocionios e anunciantes, tudo de forma segura e selecionada, além da contribuição voluntária.
+
