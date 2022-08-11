@@ -1,0 +1,750 @@
+/*Padronização*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    overflow-x: hidden;
+
+}
+
+body {
+    background-color: rgb(243, 240, 236);
+
+}
+
+p{
+    font-family: 'Roboto Flex';
+    font-size: 20px;
+    text-indent: 5%;
+
+}
+
+ul, li{
+    list-style-type: none;
+
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Roboto Flex';
+    color: white;
+}
+
+/* Formas geométricas index */
+
+div.superelipse-logo{
+	position: absolute;
+	top: -15%;
+	left: 8%;
+	height: 60%;
+	width: 20%;
+	border-radius: 0 0 50em 50em;
+	transform: rotate(30deg);
+	background-image: linear-gradient(rgb(61, 11, 94), rgb(151, 14, 140), rgb(207, 89, 168));
+}
+div.superelipse-menu{
+	position: absolute;
+	left: 50%;
+	height: 5%;
+	width: 50%;
+	border-radius: 0 0 0 100em;
+	background-image: linear-gradient(rgb(112, 14, 112), rgb(175, 14, 140));
+
+}
+div.superelipse-body-L1{
+	position: absolute;
+	top: 85%;
+	left: -10%;
+	height: 60%;
+	width: 15%;
+	border-radius: 50em 50em 0 0;
+	transform: rotate(120deg);
+	background-image: linear-gradient(rgb(190, 26, 190), rgb(70, 8, 128));
+
+}
+div.superelipse-body-R1{
+	position: absolute;
+	top: 85%;
+	right: -5%;
+	height: 50%;
+	width: 6%;
+	border-radius: 50em 50em 0 0;
+	transform: rotate(300deg);
+	background-image: linear-gradient(rgb(190, 26, 190), rgb(70, 8, 128));
+
+}
+div.superelipse-body-L2{
+	position: absolute;
+	top: 200%;
+	left: -10%;
+	height: 60%;
+	width: 10%;
+	border-radius: 50em 50em 0 0;
+	transform: rotate(50deg);
+	background-image: linear-gradient(rgb(190, 26, 190), rgb(70, 8, 128));
+
+}
+div.superelipse-body-R2{
+	position: absolute;
+	top: 200%;
+	right: -10%;
+	height: 60%;
+	width: 10%;
+	border-radius: 50em 50em 0 0;
+	transform: rotate(250deg);
+	background-image: linear-gradient(rgb(190, 26, 190), rgb(70, 8, 128));
+
+}
+div.superelipse-body-L3{
+	position: absolute;
+	top: 300%;
+	left: -10%;
+	height: 60%;
+	width: 15%;
+	border-radius: 50em 50em 0 0;
+	transform: rotate(120deg);
+	background-image: linear-gradient(rgb(190, 26, 190), rgb(70, 8, 128));
+
+}
+div.superelipse-body-R3{
+	position: absolute;
+	top: 300%;
+	right: -5%;
+	height: 50%;
+	width: 10%;
+	border-radius: 50em 50em 0 0;
+	transform: rotate(300deg);
+	background-image: linear-gradient(rgb(190, 26, 190), rgb(70, 8, 128));
+
+}
+
+/* Menu */
+
+/* Logo */
+
+.superelipse-logo > img {
+    position: relative;
+    top: 30%;
+    display: flex;
+    padding: 30px;
+    transform: rotate(-30deg);
+    width: 200px;
+}
+
+.logo-cadastro > img{
+    padding: 30px;
+    width: 200px;
+
+}
+
+.logo-login > img{
+    padding: 30px;
+    width: 200px;
+}
+
+/* menu de navegação */
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+} 
+
+.nav-bar-sbr{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.nav-bar-sbr li {
+    padding: 5px;
+}
+
+.nav-bar-sbr li > a {
+    font-family: 'Roboto Flex';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(218, 184, 32);
+    margin: 10px;
+    padding: 5px;
+}
+
+.nav-bar-principal{  
+    grid-row-start: 2;
+    grid-column-start: 2;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.nav-bar-principal li {
+    padding: 10px;
+    
+}
+
+.nav-bar-principal li > a {
+    font-family: 'Roboto Flex';
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+
+.nav-bar-principal li > a:hover{
+    background-color: blueviolet;
+    border-radius: 15px;
+    color: rgb(194, 194, 194);
+}
+
+/* Página de cadastro */
+
+.body-cadastro{
+    background-image: linear-gradient(rgb(190, 17, 133), rgb(151, 30, 151), rgb(116, 12, 235));
+
+}
+
+section { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    
+}
+
+/* .labels{ 
+    
+
+}
+
+.inputs{
+
+
+}
+.submit{
+
+
+}*/
+
+
+/* Login */
+
+.body-login{
+    background-image: linear-gradient(rgb(190, 17, 133), rgb(151, 30, 151), rgb(116, 12, 235));
+
+}
+
+section { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    
+}
+
+/* .labels{ 
+    
+
+}
+
+.inputs{
+
+
+}*/
+
+/* Página index */
+
+/* centralização do conteúdo */
+
+#main{
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.content {
+    padding: 30px;
+    text-align: center;
+
+}
+
+/* Área de cadastro */
+
+.cadastro{
+    margin-top: 20%;
+    margin-bottom: 10%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.container > img {
+    object-fit: cover;
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    opacity: 0.8;  
+}
+
+.cadastro > a{
+    padding: 15px;
+    margin: 10px 10px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+}
+
+
+/* Títulos e listas página index */
+
+#temas > li{
+    font-family: 'Roboto Flex';
+    font-size: 20px;
+    font-weight: bold;
+    margin: 50px;
+    list-style-type: disc;
+}
+
+h1,h2 {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Roboto Slab';
+    color: rgb(218, 184, 32);
+}
+
+h3, .prazo {
+    text-align: left;
+    text-indent: 0;
+    padding: 20px;
+    color: rgb(218, 184, 32);
+}
+
+/* F.A.Q */
+
+.faq{
+    display: inline-block;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+
+    
+}
+
+.faq > h1 {
+    color: #6cb661;
+    font-family: 'Roboto Slab';
+}
+
+.faq ul li {
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Roboto Flex';
+    color: gray;
+
+}
+
+.faq ul > ul {
+    display: none;
+
+}
+.faq ul:hover > ul{
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ccc7c7;
+    border: 5px solid gray;
+    border-radius: 5px;
+    color: gray;
+}
+
+.man-user{
+    text-align: center;
+    margin: 50px;
+}
+
+.man-user > input{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Nossa história */
+
+.nossa-historia-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+}
+
+.nossa-historia-title{
+    color:#6cb661;  
+    text-align: center;
+    padding: 20px;
+
+}
+
+.nossa-historia-cnt{
+    color:#a1a1a1;
+    text-align: center;
+
+}
+
+/* Contato */
+
+.contato-container{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-family: 'Roboto Flex';
+    
+}
+
+.contato-container form > div{
+    padding: 10px;
+
+}
+
+.contato-container form div > input{
+    border-radius: 15px;
+    padding: 5px;
+    width: 100%;
+
+}
+
+.contato-title{
+    color: #6cb661;
+    text-transform: uppercase;
+}
+
+
+
+.contato-subtitulo{
+    color:#a1a1a1; 
+
+}
+
+.textearea-container > textarea{
+    resize: none;
+    width: 100%;
+    height: 10em;
+    font-family: 'Roboto Flex';
+
+}
+
+.textearea:valid {
+    border-color: red;
+
+}
+
+.textearea:invalid{
+    border-color: limegreen;
+
+}
+
+
+
+.container-btn-contato > input{
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    background-color: blueviolet;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Roboto Flex';
+    font-size: 20px;
+}
+
+
+/* Blog */
+
+.container-cnt-blog{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+
+}
+
+.search-blog {
+    width: 100%;
+}
+.search-blog > input{
+    width: 95%;
+    padding: 10px;
+    background-color: rgb(192, 181, 181);
+    color: #fff;
+    font-family: 'Roboto Flex';
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/* Videoaulas */
+
+/*rodapé*/
+
+#footer{
+    display: flex;
+    background-color: rgb(59, 30, 87);
+    padding: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sbr, .apoie{
+    display: flex;
+    color: white;
+}
+
+.sbr > li, a.apoie{
+    margin-right: 20px;
+}
+
+.topo{
+    font-weight: bold;
+    font-size: 10px;
+}
+
+/* Responsividade */
+
+@media (min-width: 1000px) and (max-width: 700px){
+    div.logo > img {
+        width: 300px;
+
+    }
+    #temas > li{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        margin: 40px;
+        list-style-type: disc;
+    }
+    h1,h2 {
+        text-align: center;
+        font-size: 10px;
+        padding: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: blueviolet;
+    }
+    
+    h3, .prazo {
+        text-align: left;
+        font-size: 10px;
+        text-indent: 0;
+        padding: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(53, 17, 87);
+    }
+    .obj, .int, .plns, .manutencao, .cadastro {
+        padding: 30px;
+        text-align: justify;
+    
+    }
+    a{
+        font-size: 15px;
+    }
+    input#btn-popup {
+        font-size: 15px;
+    }
+    p{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        text-indent: 5%;
+    }
+    .cadastro{
+        text-align: center;
+    }
+
+    .cadastro > a{
+        display: block;
+        padding: 15px;
+        margin: 10px 10px;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 5px;
+    }
+    #footer{
+        display: block;
+        background-color: rgb(59, 30, 87);
+    }
+    
+    .sbr {
+        display: flex;
+        justify-content: space-around;
+        padding: 100px;
+    }
+    
+    #footer .apoie {
+        padding: 20px;
+        text-align: center;
+    }
+    
+}
+
+@media (min-width: 500px) and (max-width: 700px){
+    div.logo > img {
+        width: 200px;
+
+    }
+    #temas > li{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 5px;
+        font-weight: bold;
+        margin: 10px;
+        list-style-type: disc;
+    }
+    h1,h2 {
+        text-align: center;
+        padding: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: blueviolet;
+    }
+    
+    h3, .prazo {
+        text-align: left;
+        text-indent: 0;
+        padding: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(53, 17, 87);
+    }
+    .obj, .int, .plns, .manutencao, .cadastro {
+        padding: 30px;
+        text-align: justify;
+    
+    }
+    a{
+        font-size: 15px;
+    }
+    input#btn-popup {
+        font-size: 15px;
+    }
+    p{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        text-indent: 5%;
+    }
+    .cadastro{
+        text-align: center;
+    }
+
+    .cadastro > a{
+        display: block;
+        padding: 15px;
+        margin: 10px 10px;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 5px;
+    }
+    #footer{
+        display: block;
+        background-color: rgb(59, 30, 87);
+    }
+    
+    .sbr {
+        display: flex;
+        justify-content: space-around;
+        padding: 100px;
+    }
+    
+    #footer .apoie {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 50px) and (max-width: 500px){
+    div.logo > img {
+        width: 150px;
+
+    }
+    #temas > li{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2px;
+        font-weight: bold;
+        margin: 5px;
+        list-style-type: disc;
+    }
+    h1,h2 {
+        text-align: center;
+        padding: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: blueviolet;
+    }
+    
+    h3, .prazo {
+        text-align: left;
+        text-indent: 0;
+        padding: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(53, 17, 87);
+    }
+    .obj, .int, .plns, .manutencao, .cadastro {
+        padding: 30px;
+        text-align: justify;
+    
+    }
+    a{
+        font-size: 10px;
+    }
+    input#btn-popup {
+        font-size: 10px;
+    }
+    p{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 15px;
+        text-indent: 5%;
+    }
+    .cadastro{
+        text-align: center;
+    }
+
+    .cadastro > a{
+        display: block;
+        padding: 15px;
+        margin: 10px 10px;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 5px;
+    }
+
+    #footer{
+        display: block;
+        background-color: rgb(59, 30, 87);
+    }
+    
+    .sbr {
+        display: flex;
+        justify-content: space-around;
+        padding: 100px;
+    }
+    
+    #footer .apoie {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
