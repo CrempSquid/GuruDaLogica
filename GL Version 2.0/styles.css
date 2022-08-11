@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------------------------------Responsividade---------------------------------------------*/
+
+@media (min-width: 480px) and (max-width: 900px){ 
+    .background-home {
+        background-position-x: 90%;
+        background-position-y: -60%;
+        background-color: black;
+        background-size: 1000px 1000px;
+    }
+    nav {
+        display: block;
+    }
+    nav ul,li,a {
+        margin-top: 50%;
+
+    }
+
+}
+
+@media (min-width: 100px) and (max-width: 480px){
+    .background-home {
+        background-position-x: 90%;
+        background-position-y: -60%;
+        background-color: black;
+        background-size: 800px 800px;
+    }
+
+}
+
+/* 480px width menu diferente */
+/*---------------------------------------------Backgrounds----------------------------------------------*/
+
+.background-home {
+    background-image: url(img/pg-home.png);
+    background-size: cover;
+}
+
+.background-vdlessons {
+    background-image: url(img/pag-aulas.png);
+    background-size: cover;
+}
+.background-blog {
+    background-image: url(img/pg-blog.png);
+    background-size: cover;
+}
+.background-ourhistory, .background-faq, .background-contact {
+    background-image: url(img/pag-contato.png);
+    background-size: cover;
+}
+
+/*------------------------------------------------Menu--------------------------------------------------*/
+
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.logo{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    padding: 15px;
+    width: 60%;
+}
+div#img-guru > img{
+    width: 200px;
+    float: left;
+}
+
+#guru-txt, #da-logica-txt { 
+    font-size: 40px;
+    text-align: center;
+    display: block;
+}
+
+#guru-txt {
+    background-image: radial-gradient(rgba(17, 192, 17, 0.884), rgb(236, 236, 19),
+     rgba(13, 26, 207, 0.884));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 15%;
+    
+}
+
+#da-logica-txt{
+    background-image: radial-gradient(rgba(17, 192, 17, 0.884), rgb(236, 236, 19),
+    rgba(13, 26, 207, 0.884));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: black;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul, li, a {
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-around;
+} 
+
+.grid-navbar {
+    display: block;
+    
+} 
+
+.grid-item-1 a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+.grid-item-2 a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+.grid-item-1{
+    display: flex;
+
+}
+.grid-item-2{
+    display: flex;
+    position: relative;
+    top: 40px;
+
+
+}
+
+ul.grid-item-2 li > a:hover{
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+
+/*------------------------------------------------Index------------------------------------------------ */
+
+
+main {
+    justify-content: center;
+    align-items: center;
+
+}
+
+#container-img-kids{
+    display: flex;
+    margin: 4.5% 0 0 10%;
+    width: 40%;
+    height: 20%;
+    float: left;
+}
+
+.container-content-introduction{
+    display: block;
+    float: right;
+    padding: 10px;
+    margin-top: 10%;
+    width: 50%;
+    height: 50%;
+}
+
+#container-img-kids > img{
+    width: 600px;
+    border-radius: 40%;
+}
+
+.text-introduction{ 
+    margin-top: -5%;
+    display: block;
+    
+}
+
+.btn-introduction{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-introduction > p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color: black;
+    
+}
+
+
+.btn-introduction > a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(212, 35, 159);
+    color: white;
+
+}
+/*-----------------------------------------------Cadastre-se--------------------------------------------*/
+
+.labelinput{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+    }
+
+.label{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;    
+    }
+/*------------------------------------------------Login-------------------------------------------------*/
+
+
+/*-----------------------------------------------Videoaulas---------------------------------------------*/
+
+
+/*-------------------------------------------------Blog-------------------------------------------------*/
+
+/*----------Área do usuário----------*/
+
+.menu-dropdown {
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    padding: 15px;
+    width: 30%;
+    height: 20%;
+}
+
+#hidden{
+    display: none;
+
+}
+
+.menu-dropdown:hover > #hidden {
+    display: block;
+
+}
+#dropdown{
+    display: flex;
+}
+ul#dropdown li > a {
+    color: rgb(241, 170, 14);
+    font-family: 'Gill Sans';
+}
+#dropdown i {
+    margin: -5% 5%;
+    color: rgb(241, 170, 14);
+}
+ul#hidden li, a {
+    color: gray;
+    font-family: 'Gill Sans';
+}
+
+.menu-dropdown:hover{
+    background-color: deeppink;
+    height: 80%;
+    border-radius: 5%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/*----------Pg principal----------*/
+
+/*---------------------------------------------Nossa história-------------------------------------------*/
+/*--------------------------------------------------FAQ-------------------------------------------------*/
+/*-----------------------------------------------Contate-nos--------------------------------------------*/
+
+
+    
+ 
