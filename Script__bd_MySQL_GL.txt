@@ -1,0 +1,91 @@
+create database guru_da_logica;
+
+use guru_da_logica;
+
+create table cursos(
+	id_curso int not null primary key auto_increment,
+    carga_horaria time not null,
+    quantidade_aulas int not null,
+    status bit not null
+);
+
+create table alunos(
+	id_aluno int not null primary key auto_increment,
+    nome varchar(30) not null,
+    nome_do_usuario varchar(30),
+    email varchar(30) not null,
+    senha varchar(30) not null,
+    data_de_nascimento date not null,
+    data_inclusao date not null,
+    data_exclusao date not null,
+    cod_curso int not null,
+    
+    constraint alunos_cursos
+    foreign key	(cod_curso)
+    references cursos (id_curso)
+);
+
+create table professores(
+	id_professor int not null primary key auto_increment,
+    nome varchar(30),
+    cpf char(14) not null,
+    telefone int not null,
+    data_inclusao date not null,
+    data_exclusao date not null    
+);
+
+create table tarefas(
+	id_tarefa int not null primary key auto_increment,    
+    data_inclusao date not null,
+    data_exclusao date not null,
+    cod_curso int not null,
+	constraint tarefas_cursos
+    foreign key	(cod_curso)
+    references cursos (id_curso)
+);
+
+create table contatos(
+	id_contato int not null primary key auto_increment,
+    data_mensagem date not null,
+    descricao_mensagem varchar(500) not null,
+    cod_professor int not null,
+    cod_aluno int not null,
+	constraint professor_contatos
+    foreign key	(cod_professor)
+    references professores (id_professor),
+    
+    constraint alunos_contatos
+    foreign key	(cod_aluno)
+    references alunos (id_aluno)    
+);
+
+create table curso_professores(
+	id_curso_professor int not null primary key auto_increment,
+    cod_curso int not null,
+    cod_professor int not null,
+    constraint curso_professor_CURSOS
+    foreign key	(cod_curso)
+    references cursos (id_curso),
+    
+    constraint curso_professor_PROFESSORES
+    foreign key	(cod_professor)
+    references professores (id_professor)    
+);
+
+create table status(
+	id_status int not null primary key auto_increment,   
+    status_usuario_curso bit not null,
+    inicio_curso date not null,
+    termino_curso date not null,
+    
+    cod_curso_professor int not null,
+    cod_professor int not null,
+    
+    constraint status_curso_professores
+    foreign key	(cod_curso_professor)
+    references curso_professores (id_curso_professor),
+    
+    constraint status_professores
+    foreign key	(cod_professor)
+    references professores (id_professor)
+);
